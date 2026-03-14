@@ -1,6 +1,6 @@
 # skill-cli2api
 
-A LobsterAI Skill that exposes Agent CLI tools (Codex, Claude Code, Gemini CLI, Cursor Agent) as an OpenAI- and Anthropic-compatible HTTP API gateway.
+A  Skill that exposes Agent CLI tools (Codex, Claude Code, Gemini CLI, Cursor Agent) as an OpenAI- and Anthropic-compatible HTTP API gateway.
 
 ## Overview
 
