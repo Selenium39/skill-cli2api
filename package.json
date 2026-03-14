@@ -1,0 +1,32 @@
+{
+  "name": "agent-cli-to-api",
+  "version": "0.2.2",
+  "description": "Expose agent CLIs as a small OpenAI-compatible HTTP API.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "agent-cli-to-api": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && cp -r src/codex_instructions dist/",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "commander": "^13.1.0",
+    "hono": "^4.7.0",
+    "pino": "^9.6.0",
+    "undici": "^7.3.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
